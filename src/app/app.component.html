@@ -1,1 +1,13 @@
-<app-contact></app-contact>
+<!-- The routed views render in the <router-outlet>-->
+
+<div>
+  <a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page"
+    >First</a
+  >
+  <hr />
+  <a routerLink="second" routerLinkActive="active" ariaCurrentWhenActive="page"
+    >Second</a
+  >
+  <a href="#" (click)="$event.preventDefault(); goToContact()">Contact</a>
+</div>
+<router-outlet></router-outlet>
